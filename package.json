@@ -24,7 +24,7 @@
     "github-release": "node ./scripts/create-github-release.js",
     "lint": "tslint -c ./tslint.json --project ./tsconfig.json --type-check -t stylish",
     "nightly": "npm run build && node ./scripts/publish-nightly.js",
-    "sass": "node-sass ./src/dev-client/sass/ion-dev.scss --output ./bin/ --output-style compressed",
+    "sass": "sass ./src/dev-client/sass/ion-dev.scss --output ./bin/ --output-style compressed",
     "sass-watch": "npm run sass && node-sass ./src/dev-client/sass/ion-dev.scss --watch --output ./bin/ --output-style compressed",
     "test": "jest",
     "watch": "npm run clean && tsc --watch & npm run sass-watch"
@@ -42,7 +42,7 @@
     "fs-extra": "^4.0.2",
     "glob": "^7.1.2",
     "json-loader": "^0.5.7",
-    "node-sass": "^4.10.0",
+    "sass": "^1.69.5",
     "os-name": "^2.0.1",
     "postcss": "^6.0.21",
     "proxy-middleware": "^0.15.0",
